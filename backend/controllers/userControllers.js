@@ -2,6 +2,7 @@ const asyncHandler = require("express-async-handler");
 const User = require("../models/userModel");
 const generateToken = require("../config/generateToken");
 
+<<<<<<< HEAD
 //@description     Get or Search all users
 //@route           GET /api/user?search=
 //@access          Public
@@ -19,6 +20,8 @@ const allUsers = asyncHandler(async (req, res) => {
   res.send(users);
 });
 
+=======
+>>>>>>> 3ac5545 (Authentication DOne)
 //@description     Register new user
 //@route           POST /api/user/
 //@access          Public
@@ -82,4 +85,8 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 module.exports = { allUsers, registerUser, authUser };
+=======
+module.exports = { registerUser, authUser };
+>>>>>>> 3ac5545 (Authentication DOne)

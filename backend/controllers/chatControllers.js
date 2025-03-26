@@ -1,4 +1,5 @@
 const asyncHandler = require("express-async-handler");
+<<<<<<< HEAD
 const Chat = require("../models/chatModel");
 const User = require("../models/userModel");
 
@@ -201,3 +202,13 @@ module.exports = {
   addToGroup,
   removeFromGroup,
 };
+=======
+
+const accessChat = asyncHandler(async (req, res) => {
+  const {} = req.body;
+
+  res.send("create chat");
+});
+
+module.exports = { accessChat };
+>>>>>>> 3ac5545 (Authentication DOne)
